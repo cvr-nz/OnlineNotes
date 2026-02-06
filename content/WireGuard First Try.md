@@ -23,7 +23,8 @@ I was looking over my home internet router following a recent ISP change and saw
 I had not used WireGuard VPNs previously and saw that it has gaining a lot of support, particularly in the open source arena. So I thought I would get this working with my laptop to have secure remote access to my home network when away. But when I went looking for the documentation on how to setup the EdgeRouter with a client I couldn't find a good guide. So here is a rough solution to show how easy it is to get going.
 ## Layout
 So I always find it easiest to visualise with a diagram. So here is what I am looking at:
-![[Wireguard-Client Drawing 2026-01-30 14.48.28.excalidraw| 800]]
+
+![[Wireguard-Client-Drawing-2026-01-30-14.48.28.excalidraw.png|800]][[Wireguard-Client Drawing 2026-01-30 14.48.28.excalidraw]]
 
 The Remote Client is on some Public Wifi, 5G or remote network connected to the Internet and I want a secure connection back to a Host on the Home LAN network, 192.168.125.0/24, so I can ssh or rdp to my server. I have a static ip A.B.C.D at home.
 
@@ -121,8 +122,9 @@ PresharedKey = 11+U1w6AymdAt/Ygr <SNIP>
 | The ip addresses and networks that are going to be routed over the tunnel. This will include the tunnel network and the LAN network(s)      | `[Peer]`      | `AllowedIPs` | `192.168.126.0/24, 192.168.125.0/24`           |
 
 >You can either add the details to the generated config file and reimport the config file, or you can hit the **Edit** button and add the additional Variables directly to the existing config, and give it a friendly name.
-
+ 
 ![[Pasted image 20260204114708.png|500]]
+ 
 - Hit Save and it should be ready to go, The App will display the details and the state of the tunnel with an Activate/Deactivate button for the connection. 
 	![[Pasted image 20260204120841.png|500]]
 ### Test and Monitoring the connection.
