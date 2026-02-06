@@ -33,7 +33,7 @@ The blue line represents the VPN tunnel between two virtual interfaces that Wire
 
 In this example I have setup a point to point network 192.168.126.0/24 with the EdgeRouter at .1 and the remote client .2.  From the remote client I need to be able to route to the 192.168.125.0/24 network.
 
-## Wireguard Configuration
+## WireGuard Configuration
 There is a good overview of how WireGuard works on their website [wireguard.com](https://wireguard.com/) but other than setting up a virtual interface on the peer, it uses public and private cryptography to create the tunnel and secure the connection.  Keys are generated for both ends of the vpn tunnel and these are stored at either end in a configuration file that the WireGuard service uses to configure the tunnel(s).
 
 ### Summary of the Steps:
