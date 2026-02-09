@@ -1,6 +1,9 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Network.Geek.NZ
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+This is my Blog note site for General thoughts or notes on topics relating to networking and other IT related musing.
+
+First article is a straightforward how to on the setupo of WireGuard on an Ubiquit EdgeRouter - [[WireGuard First Try]]
+
+Ping me on Linkedin at [Linkedin/varnij](https://www.linkedin.com/in/vanrij/)

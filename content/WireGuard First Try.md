@@ -58,9 +58,7 @@ Below is a little more detail on the configuration and further notes with a coup
 As of version 3.0 of Ubiquiti's firmware Wireguard is automatically added to the VPN options in the new improved EdgeRouter GUI.
 
 - Login into your version 3.0 EdgeRouter and select the newly relocated VPN icon on the left hand side toolbar, select the WireGuard button:
-
-  	![[Pasted image 20260130170417.png|500]]
-
+	![[Pasted image 20260130170417.png|500]]
 - Click **Enable**, the Router will turn on the WireGuard service.  The first thing it does is automatically generate new public and private keys for you. 
 
 > The Server Private and Public Keys are not editable fields. If you want to change them you must do this from the CLI.
